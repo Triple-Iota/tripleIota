@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
   "dependencies": {
     "es6-promise": "github:typings/typed-es6-promise#9243c53f70fb4909ed7cce3094bec221b9fb6d5f",
@@ -16,12 +15,3 @@
     "jquery": "registry:dt/jquery#1.10.0+20160316155526"
   }
 }
-=======
-{
-  "globalDependencies": {
-    "core-js": "registry:dt/core-js#0.0.0+20160602141332",
-    "jasmine": "registry:dt/jasmine#2.2.0+20160621224255",
-    "node": "registry:dt/node#6.0.0+20160621231320"
-  }
-}
->>>>>>> 673d810c63ebc984ad55cba77fe427ee7847f38e

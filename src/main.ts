@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*
  * Providers provided by Angular
  */
@@ -100,18 +99,3 @@ document.addEventListener('DOMContentLoaded', function main(): void {
   ])
   .catch(err => console.error(err));
 });
-=======
-import { bootstrap }    from '@angular/platform-browser-dynamic'
-import { enableProdMode } from '@angular/core';
-import { provideRouter } from '@angular/router'
-import { HTTP_PROVIDERS } from '@angular/http'
-
-import { AppComponent } from './app/app.component'
-import { appRouterProviders } from './app/app.routes'
-
-if (process.env.ENV === 'production') {
-    enableProdMode();
-}
-
-bootstrap(AppComponent, [HTTP_PROVIDERS, appRouterProviders]);
->>>>>>> 673d810c63ebc984ad55cba77fe427ee7847f38e
