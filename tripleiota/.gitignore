@@ -1,0 +1,20 @@
+# Logs
+logs
+*.log
+
+# OS generated files #
+.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
+.idea
+
+# Node Files #
+node_modules
+
+# Typings #
+typings
+
+# Compiled js files #
+src/**/*.js
+src/**/*.js.map
