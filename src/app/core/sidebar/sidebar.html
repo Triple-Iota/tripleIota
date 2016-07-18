@@ -15,7 +15,7 @@
                   13
               </span>
       &nbsp;
-      Joel <strong>Ritossa</strong>
+      Philip <strong>Smith</strong>
       <b class="caret"></b>
     </a>
     <!-- #notifications-dropdown-menu goes here when screen collapsed to xs or sm -->
@@ -23,11 +23,19 @@
   <!-- main notification links are placed inside of .sidebar-nav -->
   <ul class="sidebar-nav">
     <li>
-      <a [routerLink]=" ['Dashboard'] ">
+      <a [routerLink]= " ['Dashboard'] ">
           <span class="icon">
             <i class="fa fa-desktop"></i>
           </span>
         Home
+      </a>
+    </li>
+    <li>
+      <a [routerLink]=" ['Charts'] ">
+          <span class="icon">
+            <i class="fa fa-pie-chart"></i>
+          </span>
+        Portfolio
       </a>
     </li>
     <li>
@@ -45,18 +53,93 @@
           </span>
         Email
           <span class="label label-danger">
-            8
+            9
           </span>
-      </a>
-    </li>
-    <li>
-      <a [routerLink]=" ['Charts'] ">
-          <span class="icon">
-            <i class="glyphicon glyphicon-stats"></i>
-          </span>
-        Portfolio
       </a>
     </li>
   </ul>
-
+  <!-- every .sidebar-nav may have a title -->
+  <h5 class="sidebar-nav-title">Bookmarks <a class="action-link" href="#"><i class="glyphicon glyphicon-refresh"></i></a></h5>
+  <ul class="sidebar-nav">
+    <li>
+      <!-- an example of nested submenu. basic bootstrap collapse component -->
+      <a class="collapsed" data-target="#sidebar-forms" data-toggle="collapse" data-parent="#sidebar">
+          <span class="icon">
+            <i class="fa fa-bookmark"></i>
+          </span>
+        Mutual Funds 
+        <i class="toggle fa fa-angle-down"></i>
+      </a>
+      <ul id="sidebar-forms" class="collapse">
+        <li><a [routerLink]=" ['Components'] ">Mutual Fund 1</a></li>
+        <li><a [routerLink]=" ['Components'] ">Mutual Fund 2</a></li>
+        <li><a [routerLink]=" ['Components'] ">Mutual Fund 3</a></li>
+      </ul>
+    </li>
+    <li>
+      <a class="collapsed" data-target="#sidebar-ui" data-toggle="collapse" data-parent="#sidebar">
+          <span class="icon">
+            <i class="fa fa-bookmark"></i>
+          </span>
+        ET Funds
+        <i class="toggle fa fa-angle-down"></i>
+      </a>
+      <ul id="sidebar-ui" class="collapse">
+        <li><a [routerLink]=" ['Components'] ">Equity-Trade Fund 1</a></li>
+        <li><a [routerLink]=" ['Components'] ">Equity-Trade Fund 2</a></li>
+        <li><a [routerLink]=" ['Components'] ">Equity-Trade Fund 3</a></li>
+      </ul>
+    </li>
+    <li>
+      <a class="collapsed" data-target="#sidebar-maps" data-toggle="collapse" data-parent="#sidebar">
+          <span class="icon">
+            <i class="fa fa-bookmark"></i>
+          </span>
+        Hedge Funds
+        <i class="toggle fa fa-angle-down"></i>
+      </a>
+      <ul id="sidebar-maps" class="collapse">
+        <li><a [routerLink]=" ['Components'] ">Hedge Fund 1</a></li>
+        <li><a [routerLink]=" ['Components'] ">Hedge Fund 2</a></li>
+        <li><a [routerLink]=" ['Components'] ">Hedge Fund 3</a></li>
+      </ul>
+    </li>
+    <li>
+      <!-- an example of nested submenu. basic bootstrap collapse component -->
+      <a class="collapsed" data-target="#sidebar-tables" data-toggle="collapse" data-parent="#sidebar">
+          <span class="icon">
+            <i class="fa fa-bookmark"></i>
+          </span>
+        Crowdfunds
+        <i class="toggle fa fa-angle-down"></i>
+      </a>
+      <ul id="sidebar-tables" class="collapse">
+        <li><a [routerLink]=" ['Components'] ">Crowd Fund 1</a></li>
+        <li><a [routerLink]=" ['Components'] ">Crowd Fund 2</a></li>
+      </ul>
+    </li>
+  </ul>
+  <h5 class="sidebar-nav-title">Fund Activities<a class="action-link" href="#"></a></h5>
+  <!-- some styled links in sidebar. ready to use as links to email folders, projects, groups, etc -->
+  <ul class="sidebar-labels">
+    <li>
+      <a href="#">
+        <!-- yep, .circle again -->
+        <i class="fa fa-circle text-warning mr-xs"></i>
+        <span class="label-name">Q&As</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="fa fa-circle text-warning mr-xs"></i>
+        <span class="label-name">Posts</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="fa fa-circle text-warning mr-xs"></i>
+        <span class="label-name">Fill this in</span>
+      </a>
+    </li>
+  </ul>
 </div>
